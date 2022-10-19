@@ -1,0 +1,773 @@
+/* reviews section */
+.reviews {
+  background: #edf0f0;
+  padding: 20px 0px;
+}
+
+.reviews-title {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 10%;
+}
+
+.reviews-top__title {
+  font-size: 35px;
+  line-height: 47px;
+  color: #0a326d;
+}
+
+.reviews-top__subtitle {
+  font-size: 25px;
+  line-height: 46px;
+  color: #000000;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+.card-review {
+  display: flex;
+  align-items: initial;
+  justify-content: space-around;
+  position: relative;
+  width: 630px;
+  padding: 5px 0px;
+  background-color: #9bacc4;
+  transform: skew(-15deg);
+  margin-top: 80px;
+}
+
+.photo {
+  width: 110px;
+  height: 100px;
+  margin: 15px;
+  transform: skew(15deg);
+}
+
+.review-describe {
+  display: flex;
+  flex-direction: column;
+
+  transform: skew(15deg);
+}
+
+.review-describe-title {
+  font-size: 25px;
+  line-height: 27px;
+  font-style: italic;
+  color: white;
+  text-align: end;
+  margin-left: 40px;
+}
+
+.review-describe-subtitle > span {
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.quotes {
+  width: 25px;
+  position: absolute;
+  left: 85%;
+  top: 97%;
+}
+
+.revers-quotes {
+  width: 25px;
+  position: absolute;
+  left: 10%;
+  top: 96%;
+}
+
+.reverse-card {
+  flex-direction: row-reverse;
+}
+
+.reverse-describe {
+  text-align: end;
+}
+
+.card-container > .card-review:nth-child(even) {
+  margin-left: 50%;
+}
+
+.card-container > .card-review:nth-child(odd) {
+  margin-right: 50%;
+  padding-right: 10px;
+}
+
+footer {
+  background: #edf0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+}
+
+footer > .footer-text {
+  font-size: 45px;
+  color: #0a326d;
+  margin-left: 0px;
+}
+
+footer > #smart-button-container-footer {
+  width: 20%;
+  margin: 0 auto;
+}
+
+.uniswap-coin {
+  position: absolute;
+  transform: skew(14deg);
+  left: calc(100% + 100px);
+  bottom: 30%;
+  animation: coin-animation 3s cubic-bezier(0.44, 0.68, 0.68, 0.43) infinite;
+}
+
+.binance-coin {
+  position: absolute;
+  transform: skew(14deg);
+  left: calc(100% + 400px);
+  top: 50%;
+  animation: coin-animation 4s cubic-bezier(0.44, 0.68, 0.68, 0.43) infinite;
+}
+
+.bitcoin-coin {
+  position: absolute;
+  transform: skew(14deg);
+  right: calc(100% + 350px);
+  animation: coin-animation 2s cubic-bezier(0.44, 0.68, 0.68, 0.43) infinite;
+}
+
+.cardano-coin {
+  position: absolute;
+  transform: skew(14deg);
+  right: calc(100% + 90px);
+  top: 60%;
+  animation: coin-animation 5s cubic-bezier(0.44, 0.68, 0.68, 0.43) infinite;
+}
+
+.chainlink-coin {
+  position: absolute;
+  transform: skew(14deg);
+  bottom: 0;
+  left: calc(100% + 350px);
+  animation: coin-animation 3s cubic-bezier(0.44, 0.68, 0.68, 0.43) infinite;
+}
+
+.lite-coin {
+  position: absolute;
+  transform: skew(14deg);
+  right: calc(100% + 100px);
+  animation: coin-animation 5s cubic-bezier(0.44, 0.68, 0.68, 0.43) infinite;
+}
+
+.doge-coin {
+  position: absolute;
+  transform: skew(14deg);
+  bottom: -40px;
+  right: calc(100% + 350px);
+  animation: coin-animation 6s cubic-bezier(0.44, 0.68, 0.68, 0.43) infinite;
+}
+
+@keyframes coin-animation {
+  0% {
+    transform: translateY(0px) skew(14deg);
+  }
+
+  50% {
+    transform: translateY(20px) skew(14deg);
+  }
+}
+
+@media (max-width: 1500px) {
+  .reviews-title {
+    margin-left: 2%;
+  }
+
+  .card-review {
+    width: 600px;
+  }
+
+  .photo {
+    width: 100px;
+    height: 90px;
+    margin: 10px;
+  }
+
+  .review-describe-title {
+    font-size: 24px;
+    line-height: 25px;
+    margin-left: 30px;
+  }
+
+  .review-describe-subtitle > span {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .quotes {
+    width: 30px;
+    top: 93%;
+  }
+
+  .revers-quotes {
+    width: 30px;
+    top: 93%;
+  }
+
+  .uniswap-coin {
+    width: 150px;
+    left: calc(100% + 100px);
+    bottom: 30%;
+  }
+
+  .binance-coin {
+    width: 60px;
+    left: calc(100% + 400px);
+    top: 50%;
+  }
+
+  .bitcoin-coin {
+    width: 95px;
+    right: calc(100% + 350px);
+  }
+
+  .cardano-coin {
+    width: 70px;
+    right: calc(100% + 90px);
+    top: 60%;
+  }
+
+  .chainlink-coin {
+    width: 60px;
+    bottom: 0;
+    left: calc(100% + 350px);
+  }
+
+  .lite-coin {
+    width: 75px;
+    right: calc(100% + 100px);
+  }
+
+  .doge-coin {
+    width: 95px;
+    bottom: -40px;
+    right: calc(100% + 350px);
+  }
+}
+
+@media (max-width: 1400px) {
+  .card-review {
+    width: 550px;
+  }
+
+  .review-describe-title {
+    font-size: 20px;
+
+    margin-left: 20px;
+  }
+
+  .review-describe-subtitle > span {
+    font-size: 17px;
+    line-height: 20px;
+  }
+
+  .revers-quotes {
+    width: 30px;
+  }
+}
+
+@media (max-width: 1270px) {
+  .card-review {
+    width: 470px;
+  }
+
+  .review-describe-title {
+    font-size: 18px;
+
+    margin-left: 15px;
+  }
+
+  .review-describe-subtitle {
+    font-size: 13px;
+  }
+
+  .review-describe-subtitle > span {
+    font-size: 15px;
+    line-height: 15px;
+  }
+
+  .revers-quotes {
+    width: 33px;
+  }
+}
+
+@media (max-width: 950px) {
+  .reviews-title {
+    margin-right: 5%;
+  }
+
+  .reviews-top__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .reviews-top__subtitle {
+    font-size: 20px;
+    line-height: 40px;
+  }
+
+  .card-review {
+    width: 350px;
+    margin-top: 70px;
+  }
+
+  .photo {
+    width: 90px;
+    height: 80px;
+    margin: 8px;
+  }
+
+  .review-describe-title {
+    font-size: 15px;
+    line-height: 15px;
+    margin-left: 15px;
+  }
+
+  .review-describe-subtitle {
+    font-size: 12px;
+    margin-top: 6px;
+  }
+
+  .review-describe-subtitle > span {
+    font-size: 13px;
+    line-height: 14px;
+  }
+
+  .revers-quotes {
+    width: 30px;
+  }
+
+  .quotes {
+    width: 30px;
+  }
+
+  .uniswap-coin {
+    width: 130px;
+    left: calc(100% + 50px);
+    bottom: 30%;
+  }
+
+  .binance-coin {
+    width: 40px;
+    left: calc(100% + 350px);
+  }
+
+  .bitcoin-coin {
+    width: 75px;
+    right: calc(100% + 300px);
+  }
+
+  .cardano-coin {
+    width: 50px;
+    right: calc(100% + 60px);
+  }
+
+  .chainlink-coin {
+    width: 50px;
+    left: calc(100% + 290px);
+  }
+
+  .lite-coin {
+    width: 55px;
+    right: calc(100% + 80px);
+  }
+
+  .doge-coin {
+    width: 75px;
+    right: calc(100% + 270px);
+  }
+}
+
+@media (max-width: 750px) {
+  footer > #smart-button-container-footer {
+    width: 30%;
+  }
+
+  .reviews-top__title {
+    font-size: 27px;
+    line-height: 30px;
+  }
+
+  .reviews-top__subtitle {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .photo {
+    width: 70px;
+    height: 65px;
+    margin: 5px;
+  }
+
+  .review-describe-title {
+    font-size: 13px;
+    line-height: 14px;
+    margin-left: 0px;
+  }
+
+  .review-describe-subtitle {
+    margin-top: 3px;
+  }
+
+  .review-describe-subtitle > span {
+    font-size: 12px;
+    line-height: 13px;
+  }
+
+  .revers-quotes {
+    width: 25px;
+  }
+
+  .quotes {
+    width: 25px;
+  }
+
+  .card-container > .card-review:nth-child(even) {
+    margin-left: 35%;
+  }
+
+  .card-container > .card-review:nth-child(odd) {
+    margin-right: 35%;
+  }
+
+  .uniswap-coin {
+    width: 120px;
+    left: calc(100% + 10px);
+    bottom: 30%;
+  }
+
+  .binance-coin {
+    width: 30px;
+    left: calc(100% + 250px);
+  }
+
+  .bitcoin-coin {
+    width: 70px;
+    right: calc(100% + 200px);
+  }
+
+  .cardano-coin {
+    width: 40px;
+    right: calc(100% + 60px);
+  }
+
+  .chainlink-coin {
+    width: 50px;
+    left: calc(100% + 200px);
+  }
+
+  .lite-coin {
+    width: 45px;
+    right: calc(100% + 50px);
+  }
+
+  .doge-coin {
+    width: 70px;
+    right: calc(100% + 150px);
+  }
+}
+
+@media (max-width: 700px) {
+  footer {
+    height: 180px;
+    padding: 0 5px;
+  }
+
+  footer > .footer-text {
+    font-size: 30px;
+  }
+
+  footer > .send-form__btn {
+    width: 110px;
+    height: 25px;
+  }
+
+  footer > #smart-button-container-footer {
+    width: 40%;
+  }
+
+  .reviews-title {
+    margin-right: 2%;
+  }
+
+  .reviews-top__title {
+    font-size: 24px;
+    line-height: 20px;
+  }
+
+  .reviews-top__subtitle {
+    font-size: 14px;
+  }
+
+  .card-review {
+    width: 320px;
+  }
+
+  .review-describe-title {
+    font-size: 11px;
+    line-height: 13px;
+  }
+
+  .revers-quotes {
+    width: 18px;
+    top: 93%;
+  }
+
+  .quotes {
+    width: 18px;
+    top: 93%;
+  }
+
+  .card-container > .card-review:nth-child(even) {
+    margin-left: 30%;
+  }
+
+  .card-container > .card-review:nth-child(odd) {
+    margin-right: 30%;
+  }
+
+  .uniswap-coin {
+    width: 110px;
+    left: calc(100% + 10px);
+    bottom: 20%;
+  }
+
+  .binance-coin {
+    width: 35px;
+    left: calc(100% + 150px);
+  }
+
+  .bitcoin-coin {
+    bottom: 40%;
+    width: 60px;
+    right: calc(100% + 110px);
+  }
+
+  .cardano-coin {
+    width: 30px;
+    right: calc(100% + 30px);
+  }
+
+  .chainlink-coin {
+    width: 40px;
+    left: calc(100% + 100px);
+  }
+
+  .lite-coin {
+    width: 40px;
+    right: calc(100% + 20px);
+  }
+
+  .doge-coin {
+    width: 50px;
+    right: calc(100% + 100px);
+  }
+}
+
+@media (max-width: 550px) {
+  footer > .footer-text {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  footer > .send-form__btn {
+    width: 90px;
+  }
+
+  footer > #smart-button-container-footer {
+    width: 50%;
+    margin-top: 20px;
+  }
+
+  .reviews-top__title {
+    font-size: 20px;
+  }
+
+  .reviews-top__subtitle {
+    font-size: 12px;
+  }
+
+  .card-review {
+    width: 300px;
+    padding: 5px 15px;
+  }
+
+  .card-container > .card-review:nth-child(even) {
+    margin-left: 20%;
+  }
+
+  .card-container > .card-review:nth-child(odd) {
+    margin-right: 20%;
+  }
+
+  .uniswap-coin {
+    width: 100px;
+    left: calc(100% + 10px);
+    bottom: 50%;
+  }
+
+  .binance-coin {
+    width: 30px;
+    left: calc(100% + 100px);
+  }
+
+  .bitcoin-coin {
+    bottom: 60%;
+    width: 50px;
+    right: calc(100% + 70px);
+  }
+
+  .cardano-coin {
+    width: 25px;
+    right: calc(100% + 20px);
+  }
+
+  .chainlink-coin {
+    width: 30px;
+    left: calc(100% + 50px);
+  }
+
+  .lite-coin {
+    width: 35px;
+    right: calc(100% + 10px);
+  }
+
+  .doge-coin {
+    width: 45px;
+    right: calc(100% + 40px);
+  }
+}
+
+@media (max-width: 450px) {
+  footer > #smart-button-container-footer {
+    width: 70%;
+  }
+
+  .reviews-top__title {
+    font-size: 28px;
+  }
+
+  .reviews-top__subtitle {
+    font-size: 13px;
+    width: 90%;
+    text-align: end;
+    line-height: 19px;
+    margin-top: 10px;
+  }
+
+  .card-container > .card-review:nth-child(even) {
+    margin-left: 0%;
+  }
+
+  .card-container > .card-review:nth-child(odd) {
+    margin-right: 0%;
+  }
+
+  .uniswap-coin {
+    width: 50px;
+    left: calc(100% - 60px);
+    bottom: 100%;
+  }
+
+  .binance-coin {
+    left: calc(100% - 330px);
+  }
+
+  .bitcoin-coin {
+    bottom: 40%;
+    width: 40px;
+    right: calc(100% - 355px);
+  }
+
+  .cardano-coin {
+    bottom: 10%;
+    width: 25px;
+    right: calc(100% + 10px);
+  }
+
+  .chainlink-coin {
+    width: 30px;
+    left: calc(100% + 30px);
+  }
+
+  .lite-coin {
+    width: 35px;
+    right: calc(100% + 10px);
+  }
+
+  .doge-coin {
+    width: 45px;
+    right: calc(100% - 100px);
+  }
+}
+
+@media (max-width: 400px) {
+  .reviews-top__title {
+    font-size: 26px;
+  }
+
+  .reviews-top__subtitle {
+    font-size: 12px;
+    width: 90%;
+    text-align: end;
+    line-height: 17px;
+  }
+
+  .uniswap-coin {
+    width: 50px;
+    left: calc(100% - 60px);
+    bottom: calc(100% + 20px);
+  }
+
+  .binance-coin {
+    left: calc(100% - 300px);
+    top: 100%;
+  }
+
+  .bitcoin-coin {
+    bottom: calc(100% + 20px);
+    right: calc(100% - 250px);
+  }
+
+  .cardano-coin {
+    top: calc(5% + 80px);
+    width: 25px;
+    right: calc(100% - 100px);
+  }
+
+  .chainlink-coin {
+    width: 30px;
+    left: calc(100% + 0px);
+  }
+
+  .lite-coin {
+    width: 25px;
+    right: calc(100% + 0px);
+    bottom: calc(100% + 20px);
+  }
+
+  .doge-coin {
+    width: 45px;
+    right: calc(100% - 100px);
+  }
+}

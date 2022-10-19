@@ -1,0 +1,327 @@
+/* meeting section */
+.meeting {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: url("../assets/lines.png");
+  background-size: 100% 70%;
+  background-repeat: no-repeat;
+}
+
+.meeting-left {
+  width: 60%;
+  position: relative;
+}
+
+.meeting-left > .man-speaker {
+  width: 90%;
+}
+
+.info-circle {
+  width: 250px;
+  height: 250px;
+  box-shadow: 10px #000022;
+  position: absolute;
+  left: 5%;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.meeting-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+
+.form-title {
+  font-size: 34px;
+  line-height: 24px;
+  margin-bottom: 40px;
+  color: #0a326d;
+}
+
+.meeting-right__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.meeting-right__form > input {
+  width: 90%;
+  height: 40px;
+  background: #ffffff;
+  border-radius: 10px;
+  text-align: center;
+  outline: none;
+}
+
+.meeting-right__form > input:nth-child(1n + 1) {
+  margin-top: 20px;
+}
+
+.meeting-right__form > input:nth-child(4) {
+  margin: 40px 0 30px 0px;
+
+  height: 100px;
+}
+
+.meeting-right__form > input::placeholder {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  color: #0a326d;
+  text-align: center;
+}
+
+#phone::-webkit-inner-spin-button,
+#phone::-webkit-outer-spin-button {
+  appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.send-form__btn {
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  color: #0a326d;
+  font-weight: bolder;
+  font-size: 20px;
+  text-align: center;
+  background: #ffffff;
+  transition: 0.5s ease-in-out;
+  box-shadow: 1px 0px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.send-form__btn:hover {
+  transform: translateY(-5px);
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 230px;
+  margin-top: 30px;
+}
+
+.social > a > img {
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+}
+
+.social > a {
+  display: flex;
+}
+
+@media (max-width: 1150px) {
+  .meeting {
+    justify-content: space-between;
+  }
+
+  .meeting-left {
+    width: 80%;
+    margin-bottom: 0;
+    position: relative;
+  }
+
+  .meeting-left > .man-speaker {
+    width: 100%;
+  }
+
+  .info-circle {
+    width: 230px;
+    height: 230px;
+  }
+
+  .form-title {
+    font-size: 30px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    color: #0a326d;
+  }
+
+  .meeting-right__form > input {
+    height: 35px;
+  }
+
+  .meeting-right__form > input:nth-child(1n + 1) {
+    margin-top: 10px;
+  }
+
+  .meeting-right__form > input:nth-child(4) {
+    margin: 20px 0 15px 0px;
+
+    height: 90px;
+  }
+
+  .send-form__btn {
+    width: 80px;
+    height: 25px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 950px) {
+  .meeting-left {
+    width: 60%;
+  }
+
+  .info-circle {
+    width: 200px;
+    height: 200px;
+  }
+
+  .form-title {
+    /* font-size: 30px; */
+    /* line-height: 20px; */
+    margin-bottom: 18px;
+  }
+
+  .meeting-right__form > input {
+    height: 30px;
+  }
+
+  .meeting-right__form > input:nth-child(4) {
+    margin: 17px 0 15px 0px;
+
+    height: 80px;
+  }
+}
+
+@media (max-width: 680px) {
+  .meeting-left {
+    width: 57%;
+    margin-top: 28px;
+  }
+
+  .info-circle {
+    width: 170px;
+    height: 170px;
+  }
+
+  .form-title {
+    font-size: 27px;
+    line-height: 17px;
+    margin-bottom: 10px;
+  }
+
+  .meeting-right__form > input {
+    height: 25px;
+  }
+
+  /* .meeting-right__form > input:nth-child(4) {
+      margin: 17px 0 15px 0px;
+    
+      height: 80px;
+    } */
+
+  .social {
+    width: 180px;
+    margin-top: 15px;
+  }
+  .social > a > img {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 580px) {
+  .meeting-left {
+    width: 47%;
+    margin-top: 80px;
+  }
+
+  .info-circle {
+    width: 120px;
+    height: 120px;
+  }
+
+  .form-title {
+    font-size: 27px;
+    margin-bottom: 5px;
+  }
+
+  .meeting-right__form > input {
+    height: 20px;
+  }
+
+  .meeting-right {
+    width: 45%;
+  }
+
+  .meeting-right__form > input:nth-child(4) {
+    margin: 14px 0 13px 0px;
+    height: 75px;
+  }
+
+  .social {
+    width: 140px;
+  }
+  .social > a > img {
+    width: 13px;
+    height: 13px;
+  }
+}
+
+@media (max-width: 450px) {
+  .meeting {
+    flex-direction: column;
+  }
+
+  .meeting-left {
+    margin-top: 0;
+    margin-left: 50%;
+  }
+
+  .info-circle {
+    width: 130px;
+    height: 140px;
+    border-radius: 5%;
+    left: -100%;
+    top: 5%;
+  }
+
+  .form-title {
+    margin: 10px 0 5px 0;
+  }
+
+  .meeting-right {
+    width: 70%;
+  }
+
+  .meeting-right__form > input {
+    border-radius: 6px;
+    border: 1px solid gray;
+  }
+
+  .social {
+    width: 170px;
+  }
+  .social > a > img {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media (max-width: 380px) {
+  .info-circle {
+    width: 115px;
+    height: 127px;
+    border-radius: 5%;
+    left: -100%;
+    top: 4%;
+  }
+}

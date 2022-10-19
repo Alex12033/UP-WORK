@@ -1,0 +1,410 @@
+/* crypto lections section */
+.crypto-lections {
+  background: url("../assets/lines.png");
+  background-size: 150% 150%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0px;
+}
+
+.crypto-lections__title {
+  color: #0a326d;
+  font-size: 70px;
+  margin-left: 10px;
+}
+
+.crypto-lections__subtitle {
+  color: #ffce00;
+  font-size: 50px;
+  line-height: 66px;
+  margin-left: 10px;
+}
+
+.lections {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin-top: 40px;
+}
+
+.left-lection {
+  width: 50%;
+  text-align: end;
+}
+
+.lection-2,
+.lection-3,
+.lection-1 {
+  text-align: right;
+  font-size: 20px;
+  line-height: 36px;
+ 
+}
+
+.lection-1 > span {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.lection-1 {
+  margin-bottom: 200px;
+}
+
+.lection-1__title,
+.lection-2__title,
+.lection-3__title {
+  font-size: 25px;
+  line-height: 36px;
+  color: #0a326d;
+}
+
+.right-lection {
+  width: 50%;
+  text-align: end;
+}
+
+/* about meeting section */
+.about-meeting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 20px 0px;
+  background: linear-gradient(90deg, #0a326d 0%, #0046b0 99.89%);
+}
+
+.about-meeting > .cube {
+  top: 65%;
+  left: 5%;
+}
+
+.about-meeting__right {
+  width: 60%;
+  margin-left: 20%;
+}
+
+.about-meeting__text {
+  color: #ffffff;
+  font-size: 25px;
+  line-height: 46px;
+  text-align: end;
+}
+
+.button-propose > #smart-button-container-propose {
+  margin-right: 50%;
+  width: 150px;
+}
+
+.button-propose {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.propose {
+  font-size: 35px;
+  line-height: 57px;
+  color: #ffffff;
+  text-align: end;
+}
+
+.renewed-price {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.price {
+  color: #ffffff;
+  font-size: 23px;
+  margin-right: 10px;
+}
+
+.price > span {
+  text-decoration: line-through;
+}
+
+.propose-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.propose-2 > span{
+  color: #ffffff;
+  font-size: 23px;
+  line-height: 42px;
+}
+
+@media (max-width: 1150px) {
+  .crypto-lections {
+    background-size: 100% 90%;
+  }
+
+  .crypto-lections__title {
+    font-size: 60px;
+  }
+
+  .crypto-lections__subtitle {
+    font-size: 40px;
+    line-height: 56px;
+  }
+
+  .lection-2,
+  .lection-3,
+  .lection-1 {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .lection-1 {
+    margin-bottom: 200px;
+  }
+
+  .lection-1__title,
+  .lection-2__title,
+  .lection-3__title {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .about-meeting > .cube {
+    top: 55%;
+    left: 5%;
+  }
+
+  .about-meeting__right {
+    width: 65%;
+    margin-left: 15%;
+  }
+
+  .about-meeting__text {
+    font-size: 20px;
+    line-height: 36px;
+  }
+
+  .button-propose > .propose {
+    font-size: 33px;
+    line-height: 55px;
+  }
+}
+
+@media (max-width: 950px) {
+  .lections {
+    width: 95%;
+  }
+
+  .crypto-lections__title {
+    font-size: 50px;
+  }
+
+  .crypto-lections__subtitle {
+    font-size: 35px;
+    line-height: 50px;
+  }
+
+  .lection-2,
+  .lection-3,
+  .lection-1 {
+    font-size: 15px;
+    line-height: 28px;
+  }
+
+  .lection-1__title,
+  .lection-2__title,
+  .lection-3__title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .about-meeting > .cube {
+    top: 45%;
+    left: 5%;
+  }
+
+  .about-meeting__right {
+    width: 70%;
+  }
+
+  .about-meeting__text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .button-propose > .propose {
+    font-size: 28px;
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 800px) {
+  .crypto-lections__title {
+    font-size: 35px;
+  }
+
+  .crypto-lections__subtitle {
+    font-size: 27px;
+    line-height: 40px;
+  }
+
+  .lection-2,
+  .lection-3,
+  .lection-1 {
+    font-size: 15px;
+    line-height: 27px;
+  }
+
+  .lection-1__title,
+  .lection-2__title,
+  .lection-3__title {
+    font-size: 19px;
+    line-height: 27px;
+  }
+
+  .about-meeting > .cube {
+    top: 45%;
+    left: 5%;
+  }
+
+  .about-meeting__right {
+    width: 75%;
+  }
+
+  .about-meeting__text {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .button-propose > .propose {
+    font-size: 24px;
+    line-height: 40px;
+  }
+
+  .button-propose > #smart-button-container-propose {
+    margin-right: 45%;
+  }
+}
+
+@media (max-width: 550px) {
+  .propose-2 > span{
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .renewed-price > .price {
+    font-size: 17px;
+  }
+
+  .crypto-lections__title {
+    font-size: 25px;
+  }
+
+  .crypto-lections__subtitle {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .lection-1__title,
+  .lection-2__title,
+  .lection-3__title {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .about-meeting > .cube {
+    top: 45%;
+    left: 5%;
+  }
+
+  .about-meeting__right {
+    width: 78%;
+  }
+
+  .about-meeting__text {
+    line-height: 23px;
+    text-align: left;
+  }
+
+  .button-propose > .propose {
+    font-size: 19px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+
+  .propose-2 > span{
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .crypto-lections__title {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .crypto-lections__subtitle {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .lection-1__title,
+  .lection-2__title,
+  .lection-3__title {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .lection-1 {
+    margin-right: 20px;
+  }
+
+  .about-meeting > .cube {
+    top: 45%;
+    left: 5%;
+  }
+
+  .about-meeting__right {
+    width: 78%;
+  }
+
+  .about-meeting__text {
+    line-height: 23px;
+  }
+
+  .button-propose > .propose {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .button-propose > .send-form__btn {
+    width: 60px;
+    height: 20px;
+    font-size: 13px;
+  }
+  
+  .button-propose > #smart-button-container-propose {
+    margin-right: 40%;
+  }
+}
+
+@media (max-width: 320px) {
+  .crypto-lections__title {
+    text-align: end;
+    margin-right: 10px;
+  }
+
+  .crypto-lections__subtitle {
+    text-align: end;
+    margin-right: 10px;
+  }
+}
