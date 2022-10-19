@@ -1,6 +1,7 @@
 import "../../src/css/preloader.css";
 
-document.body.style.overflow = "hidden";
+document.body.style.overflowY = "hidden";
+document.documentElement.style.overflowY = 'hidden';
 
 function preloader() {
   document.body.onload = function () {
@@ -11,7 +12,8 @@ function preloader() {
         preloader.classList.add("done");
       }
 
-      document.body.style.overflow = "scroll";
+      document.body.style.overflowY = "scroll";
+      document.documentElement.style.overflowY = 'scroll';
     }, 3000);
   };
 }

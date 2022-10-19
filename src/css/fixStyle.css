@@ -1,9 +1,5 @@
-html {
-  -webkit-overflow-scrolling: touch;
+body, html {
   box-sizing: border-box;
-}
-
-body {
   -webkit-overflow-scrolling: touch;
   overflow-x: hidden;
   margin: 0;
