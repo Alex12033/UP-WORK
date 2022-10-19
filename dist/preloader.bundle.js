@@ -1,0 +1,1 @@
+(()=>{"use strict";document.body.style.overflow="hidden";const o=function(){document.body.onload=function(){setTimeout((function(){var o=document.querySelector(".preloader-backdrop");o.classList.contains("done")||o.classList.add("done"),document.body.style.overflow="scroll"}),3e3)}};o()})();

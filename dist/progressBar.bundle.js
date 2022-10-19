@@ -1,0 +1,1 @@
+(()=>{"use strict";var n=document.querySelector(".progress-line");(function(){document.onscroll=function(){var e=window.scrollY/(document.body.clientHeight-window.innerHeight)*100;n.style.width="".concat(e,"%")}})()})();

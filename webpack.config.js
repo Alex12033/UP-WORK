@@ -15,6 +15,8 @@ module.exports = {
     animationAos: path.resolve(__dirname, "./src/aosAnimationConfig.js"),
     particles: path.resolve(__dirname, "./src/particles.js"),
     style: path.resolve(__dirname, "./src/style.js"),
+    progressBar: path.resolve(__dirname, "./src/progressBar.js"),
+    preloader: path.resolve(__dirname, "./src/preloaderPage.js"),
   },
 
   output: {
@@ -46,7 +48,7 @@ module.exports = {
         test: /\.(js)$/,
         exclude: /node_modules/,
         use: ["babel-loader"],
-      }
+      },
     ],
   },
 
@@ -66,7 +68,15 @@ module.exports = {
 
       excludeChunks: [],
 
-      chunks: ["autoplayVideo", "payPalBtn", "animationAos", "particles", "style"],
+      chunks: [
+        "autoplayVideo",
+        "payPalBtn",
+        "animationAos",
+        "particles",
+        "style",
+        "progressBar",
+        "preloader"
+      ],
     }),
   ],
 };
