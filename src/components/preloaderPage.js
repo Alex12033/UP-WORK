@@ -14,7 +14,7 @@ function preloader() {
 
       document.body.style.overflowY = "scroll";
       document.documentElement.style.overflowY = 'scroll';
-    }, 3000);
+    }, 500);
   };
 }
 
